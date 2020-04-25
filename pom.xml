@@ -11,7 +11,7 @@
 	</parent>
 
 	<artifactId>jds-package-example</artifactId>
-	<packaging>jar</packaging>
+	<packaging>jds</packaging>
 	<version>1.0-SNAPSHOT</version>
 
     <name>JDS Package Example</name>
@@ -57,14 +57,7 @@
 				<groupId>com.barrouh.plugins</groupId>
 				<artifactId>jds-maven-plugin</artifactId>
 				<version>1.0-SNAPSHOT</version>
-				<executions>
-					<execution>
-						<phase>package</phase>
-						<goals>
-							<goal>generate-jds-package</goal>
-						</goals>
-					</execution>
-				</executions>
+				<extensions>true</extensions>
 			</plugin>
 		</plugins>
 	</build>
